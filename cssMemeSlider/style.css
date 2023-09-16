@@ -7,6 +7,10 @@
     color: #facb62;
 }
 
+body {
+    background-color:rgb(183 199 221);
+}
+
 .wrapper {
     background-color: rgb(111 140 181);
     padding: 0.5rem 1rem;
@@ -132,3 +136,26 @@ span:hover {
     margin-left: -300%;
 }
 
+@media (max-width: 1200px) {
+    * {
+        font-size: 1.2rem;
+    }
+    .wrapper {
+        width: 100%;
+        max-width: 90%;
+        padding-bottom: 1.5rem;
+    }
+
+    .slides-control {
+        flex-direction: column-reverse;
+    }
+
+    .slides-control .pagination {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .slides-control .descriptions {
+        width: 100%;
+    }
+}
